@@ -29,7 +29,7 @@
 
 
         <datatable  v-bind:list-data ="searchData "></datatable>
-
+        <testCheckbox/>
 
       </div>
 
@@ -41,6 +41,7 @@
 
 import menuComponent from "@/components/menuComponent";
 import datatable from "@/components/dataTableComponent";
+import testCheckbox from "./components/testCheckbox.vue"
 export default {
   props : ["searchInput"],
   data: () => ({
@@ -86,6 +87,7 @@ export default {
 
     menuComponent,
     datatable,
+    testCheckbox,
   }
 }
 </script>
